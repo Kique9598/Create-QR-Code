@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "QR Generator",
+  "version": "1.0.0",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/lucide_qr-code-16px.png",
+      "32": "icons/lucide_qr-code-32px.png",
+      "48": "icons/lucide_qr-code-48px.png"
+    }
+  }
+}
