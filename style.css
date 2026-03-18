@@ -1,0 +1,123 @@
+:root {
+  --clr-purple: #d0befa;
+  --clr-text: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: 0px;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1d1b20;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-block: 2px;
+  color: #d6e6f7;
+}
+
+.title-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#qrcode-wrapper {
+  width: 85%;
+  aspect-ratio: 1;
+  max-width: 280px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 18px;
+  border: 1px solid #3d4043;
+}
+
+#qrcode img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.btn-close {
+  border: none;
+  border-radius: 100vw;
+  background-color: transparent;
+  font-family: inherit;
+  color: var(--clr-text);
+  font-size: inherit;
+
+  &:hover {
+    background-color: #323136;
+  }
+
+  &:active {
+    background-color: #605d63;
+  }
+}
+
+.qrcode-wrapper {
+  background-color: white;
+  padding: 18px;
+  margin: auto;
+  width: fit-content;
+  border: 2px solid #3d4043;
+  border-radius: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid var(--clr-purple);
+  background-color: transparent;
+  border-radius: 10px;
+  color: var(--clr-text);
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::selection {
+  background-color: #4e3d76;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.btn {
+  padding: 10px 12px;
+  background: none;
+  color: var(--clr-purple);
+  font-weight: bold;
+  border: 0.5px solid var(--clr-purple);
+  border-radius: 100vw;
+
+  &:hover {
+    background-color: #605d63;
+    border-color: transparent;
+  }
+
+  &:active {
+    background: transparent;
+    border-color: var(--clr-purple);
+  }
+}
