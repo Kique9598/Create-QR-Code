@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="qrcode.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="title-text">Scan QR Code</div>
+      <button class="btn-close" id="button-close">X</button>
+    </header>
+
+    <div id="qrcode-wrapper">
+      <div id="qrcode"></div>
+    </div>
+
+    <!-- on change, re-render qrcode | qrcode renders the value of this input | default input value = this.page.url -->
+    <input type="text" name="" id="input-url" />
+
+    <footer>
+      <button class="btn" id="button-copy">Copy</button>
+      <button class="btn" id="button-download">Download</button>
+    </footer>
+  </body>
+</html>
